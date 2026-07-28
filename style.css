@@ -273,7 +273,7 @@ strong {
     width: 80%;
     margin-left: 10%;
     color: #08090Aff;
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     text-transform: uppercase;
 }
 
@@ -294,7 +294,8 @@ strong {
 .box-item a{
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-weight: bold; 
+    font-weight: bolder; 
+    text-shadow: 2px 2px 2px #4b4b4a;
     transition:all 0.2s ease-in-out;
     
 }
@@ -309,8 +310,8 @@ strong {
 }
 
 .bilu{
-    background-image: url("assets/blackworkArt.webp");
-    background-repeat: no-repeat;
+    background-image: url("assets/blackworkcapa.webp");
+    background-repeat:no-repeat;
     background-attachment: scroll;
     background-size: 100% 100%;
     padding: 0.06rem;
@@ -318,8 +319,8 @@ strong {
 
 }
 .bilu2{
-    background-image: url("assets/animeArt.webp");
-    background-repeat: no-repeat;
+    background-image: url("assets/animecapa.webp");
+    background-repeat: round;
     background-attachment: scroll;
     background-size: 100% 100%;
     padding: 0.06rem;
@@ -327,10 +328,10 @@ strong {
 
 }
 .bilu3{
-    background-image: url("assets/oldschollArt.webp");
-    background-repeat: no-repeat;
+    background-image: url("assets/oldschoolcapa.webp");
+    background-repeat: round;
     background-attachment: scroll;
-    background-size:cover;
+    background-size:100% 100%;
     padding: 0.06rem;
     border: black 4px solid;
 
