@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Caesar+Dressing&family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Teko", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.btn-voltar {
+    position: fixed;
+    top: 1.25rem;
+    left: 1.25rem;
+
+    width: 3.12rem;
+    height: 3.12rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border: #967347ff 2px solid;
+    color: #eae3e3;
+    text-decoration: none;
+    
+
+    font-size: 28px;
+    font-weight: bold;
+
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,.3);
+
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+/* Hover */
+.btn-voltar:hover {
+    background-color: #121210;
+    transform: translateY(-3px) scale(1.09);
+    box-shadow: 0 8px 18px   rgba(216, 210, 201, 0.192);
+}
+
+/* Clique */
+.btn-voltar:active {
+    transform: scale(0.95);
+}
+
+body{
+    background:url("assets/pexelsfree.webp");
+}
+
+.heading{
+    border: #967347ff; 1px solid;
+    color:  #967347ff;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+    
+}
+
+.heading h1{
+    font-size: 5.25rem;
+    text-transform: capitalize;
+    margin-bottom: 1.37rem;
+    position: relative;
+     text-shadow: 2px 5px #000000;
+}
+.heading h1::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #d4af37 ;
+    
+}
+
+.heading p{
+    font-size: 1.12rem;
+    color: #D8D2C9ff;
+    margin-bottom: 2.18rem;
+}
+
+.container{
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px 20px;
+    border: rgb(0, 0, 0) 5px solid;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 18px   rgba(23, 22, 22, 0.997);
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image{
+     border: rgb(107, 81, 50)   4px solid; 
+    flex: 1;
+    margin-right: 2.5rem;
+    border-radius: 10px;
+    overflow: hidden; 
+}
+
+.about-image img{
+    display:block;
+    max-width:100%;
+    height: auto;
+    transition: 0.5s ease;     
+    object-fit: fill;     /* Estica/comprime a imagem para caber no espaço acima */
+    margin-left: 4.37rem; /* Mexer nisso se der problema*/
+}
+
+.about-image:hover img{
+/* transform: scale(1.2); */
+}
+.about-content{
+    flex: 1;
+}
+.about-content h2{
+    font-size: 2.81rem;
+    margin-bottom: 1.56rem;
+    color:  #967347ff;
+    text-shadow: 2px 2px #040303;
+    
+}
+
+.about-content p{
+    font-size: 1.34rem;
+    line-height: 1.5;
+    color:  rgb(188, 183, 175);
+    font-family:  "Anton", sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    text-shadow: 2px 2px #040303;
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    .heading h1{
+        font-size: 4rem;
+    }
+
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image{
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .about-image img{
+        margin-left: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .about-content h2{
+        font-size: 2.4rem;
+    }
+
+    .about-content p{
+        font-size: 1.15rem;
+    }
+
+    .container{
+        width: 95%;
+        padding: 25px;
+    }
+}
+
+
+/* ===========================
+   CELULARES
+=========================== */
+@media screen and (max-width: 768px){
+
+    .btn-voltar{
+        width: 2.8rem;
+        height: 2.8rem;
+        font-size: 1.3rem;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .heading{
+        margin-top: 4.5rem;
+    }
+
+    .heading h1{
+        font-size: 2.8rem;
+    }
+
+    .container{
+        width: 95%;
+        padding: 20px;
+    }
+
+    .about{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image{
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-image img{
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .about-content h2{
+        font-size: 2rem;
+    }
+
+    .about-content p{
+        font-size: 1.05rem;
+        line-height: 1.8;
+    }
+}
+
+
+/* ===========================
+   CELULARES PEQUENOS
+=========================== */
+@media screen and (max-width: 480px){
+
+    .heading h1{
+        font-size: 2.2rem;
+    }
+
+    .about-content h2{
+        font-size: 1.8rem;
+    }
+
+    .about-content p{
+        font-size: 1rem;
+    }
+
+    .container{
+        padding: 15px;
+    }
+
+    .btn-voltar{
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+
+
+
+
+
+
+
+/* Paleta de cores -------------------------*/
+--soft-linen: #ECE7DFff;
+--dust-grey: #D8D2C9ff;
+--faded-copper: #967347ff;
+--coffee-bean: #7B5A45ff;
+--black: #08090Aff;
+--loweblack: #121210;
+ --gold:     #d4af37

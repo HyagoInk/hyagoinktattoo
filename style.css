@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Caesar+Dressing&family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:  #121210;
+    color: #FFFFFF;
+}
+html{
+    font-family:"Oswald", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+.logo img{
+    width: 11.25rem;
+    height: 11.25rem;
+    object-fit: contain;
+}
+.logo-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.logoHeader{
+    width: 0.125rem;
+}
+.logo-texto h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.titulo {
+    font-size: 3rem;
+    color: white;
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 1.25rem;
+    color: white;
+    margin-top: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    text-transform: lowercase;
+    display: block;
+}
+
+.linha {
+    width: 13.75rem;
+    height: 0.18rem;
+    background-color: #d4af37; /* amarelo/dourado */
+    margin-top: 0.31rem;
+    border-radius: 0.12rem;
+}
+
+nav{
+    max-width: 125rem;
+    margin: auto;
+    padding: 0.3rem 10rem;
+    background: rgb(8, 9, 10);
+
+
+    display:flex;
+    flex-flow: row;
+    justify-content: space-between ;
+    align-items: center;
+    /* box-shadow: 10px 0px 10px  #967347ff; */
+    
+}
+
+.navMenu{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    color:  #eCE7DFff;
+    font-size: 1.56rem;
+    cursor: pointer;
+}
+
+.home-and-me:hover{
+    transition: all 0.3s ease-in-out;
+    font-size: 1.75rem;
+    color: #d4af37;
+    font-weight:normal;
+}
+.home-and-me a{
+    position: relative;
+    color: #ECE7DF;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+.home-and-me a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background-color: #d4af37;
+    transition: width 0.3s ease;
+}
+
+.home-and-me a:hover{
+    color: #d4af37;
+}
+
+.home-and-me a:hover::after{
+    width: 100%;
+}
+
+button{
+    padding: 1.06rem 2.5rem;
+    border-radius: 0.62rem;
+    border: 0.12rem solid rgba(212, 175, 55, 0.45);
+    color: #d4af37;
+    cursor: pointer;
+    background-color: transparent;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 0.93rem;
+    transition: all 0.5s ease-in-out;
+    font-family: "Oswald", sans-serif;
+}
+
+button:hover {
+    background: transparent;
+    color: #d4af37;
+    font-size: 1.06rem;
+    transform: scale(1.05) translateY(-3px);
+    border: #d4af37 solid 0.18rem;
+}
+
+
+/* --------Main e Footer ------------------------------ */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: 2px solid #BF774C; */
+}
+
+.box-img {
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    margin-bottom: 0.62rem;
+    margin-top: 0.62rem;
+    border: 5px solid #564717;
+    padding: 0.31rem 0;
+}
+
+.box-txt {
+    display: flex;
+    flex-flow: row wrap;
+    width: 45%;
+    /* border: 1px solid #47241A; */
+}
+
+.box-txt span {
+    color: #9d8126;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    padding-left: 5px;
+}
+
+.box-txt h2 {
+    font-family:"Oswald", sans-serif, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+    color: #D8D2C9ff;
+    font-weight: 800;
+    margin-top: 1.87rem;
+    margin-bottom: 1.87rem;
+    line-height: 5.5rem;
+    font-style: normal;
+}
+
+.box-img p {
+    color: #20080E;
+    font-family: "Poppins", sans-serif;
+}
+
+.box-txt p {
+    color: #D8D2C9ff;
+    margin-bottom: 1.87rem;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    padding-left: 0.25rem;
+    font-size: 1.25rem;
+}
+strong {
+    color: #D8D2C9ff;
+}
+
+.botoesContato{
+    
+     width: 100%;
+     display: flex;
+     justify-content: flex-start;
+     gap: 0.93rem;
+    
+}
+.btn-social {
+    width: 3.75rem;
+    height: 3.75rem;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    
+
+    background: rgb(3, 4, 4);
+    color: #fff;
+    border-radius: 50%;
+
+    font-size: 1.87rem;
+
+    transition: all .3s ease;
+}
+
+.btn-social:hover {
+    background: #9d8126;
+    color: #121210;
+    transform: translateY(-5px) scale(1.08);
+}
+
+
+.especialidades {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    margin-left: 10%;
+    color: #08090Aff;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.box-item {
+    width: 30%;
+    height: 21.87rem;
+    /* border: rgb(0, 0, 0) 4px solid; */
+    margin: 0.31rem;
+    padding: 1.87rem 1.25rem;
+    text-align: center;
+    border-radius: 0.62rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 30px 18px   #000000;
+}
+.box-item a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold; 
+    transition:all 0.2s ease-in-out;
+    
+}
+
+.box-item a:hover{
+    text-decoration: none;
+    font-weight: bolder;
+    transform:  scale(1.1) translateY(-5px);
+    color:#9d8126;
+    text-shadow: 2px 2px #000000;
+
+}
+
+.bilu{
+    background-image: url("assets/blackworkArt.webp");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    padding: 0.06rem;
+    border: black 4px solid;
+
+}
+.bilu2{
+    background-image: url("assets/animeArt.webp");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 100% 100%;
+    padding: 0.06rem;
+    border: black 4px solid;
+
+}
+.bilu3{
+    background-image: url("assets/oldschollArt.webp");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size:cover;
+    padding: 0.06rem;
+    border: black 4px solid;
+
+}
+.m-top {
+    margin-top: 1.87rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.25rem;
+    background: #08090A;
+    height: 9.37rem;
+    color: #FBE9C3;
+    text-align: center;
+    font-size: 1.70rem;
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.zap {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+/* ----------------------------Lightbox ------------------------- */
+
+
+/* .container-galeria{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+} */
+
+.gallery{
+
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+
+    width:90%;
+    max-width:1100px;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    max-height:85vh;
+    overflow:auto;
+
+}
+
+.gallery img{
+    width: 100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:.3s;
+
+} 
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+.container-galeria{
+    position: fixed;
+    inset: 0;
+
+    display: none; /* escondida */
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0,0,0,.8);
+
+    z-index: 999;
+}
+
+#fecharGaleria{
+    position:absolute;
+    top:40px;
+    right:40px;
+
+    width:45px;
+    height:45px;
+
+    border:none;
+    border-radius:50%;
+
+    font-size:22px;
+    cursor:pointer;
+}
+
+.btnGaleria{
+    padding: 0.8rem 3.8rem;
+    background-color: #530703;
+    color: #fff;
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow:  10px 0px 10px #2c2c2c;
+}
+
+.btnGaleria:hover{
+    background-color: #720904;
+    color: #fff;
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 10px 5px 10px #2c2c2c;
+}
+
+
+@media screen and (max-width: 992px){
+
+    nav{
+        padding:1rem 2rem;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .navMenu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        flex-direction:column-reverse;
+        padding:40px 20px;
+        gap:40px;
+    }
+
+    .box-img{
+        width:70%;
+    }
+
+    .box-txt{
+        width:100%;
+        align-items:center;
+        text-align:center;
+    }
+
+    .box-txt h2{
+        font-size:55px;
+        line-height:60px;
+    }
+
+    .botoesContato{
+        justify-content:center;
+    }
+
+    .btn-social{
+        margin-left:10px;
+        margin-right:10px;
+    }
+
+    .especialidades{
+        width:95%;
+        margin:auto;
+    }
+
+    .box-item{
+        width:45%;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .box-txt {
+        flex-flow: column wrap;
+        width: 100%;
+        padding: 40px 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-txt p {
+        text-align: center;
+    }
+
+    .box-txt h2 {
+        font-size: 50px;
+    }
+
+    .box-img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .box-item {
+        width: 95%;
+    }
+
+    footer {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    header h1 {
+        padding: 7px;
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    nav{
+        padding:15px;
+    }
+
+    .logo{
+        flex-direction:column;
+        gap:5px;
+    }
+
+    .logo img{
+        width:120px;
+        height:120px;
+    }
+
+    .titulo{
+        font-size:2rem;
+    }
+
+    .subtitulo{
+        font-size:15px;
+    }
+
+    .linha{
+        width:160px;
+    }
+
+    .navMenu{
+        flex-direction:column;
+        gap:15px;
+        font-size:22px;
+    }
+
+    button{
+        width:100%;
+        max-width:280px;
+    }
+
+    .hero{
+        padding:30px 20px;
+    }
+
+    .box-img{
+        width:100%;
+    }
+
+    .box-img img{
+        width:100%;
+        height:auto;
+    }
+
+    .box-txt{
+        width:100%;
+    }
+
+    .box-txt span{
+        letter-spacing:2px;
+        font-size:14px;
+        text-align:center;
+    }
+
+    .box-txt h2{
+        font-size:42px;
+        line-height:48px;
+        text-align:center;
+    }
+
+    .box-txt p{
+        font-size:18px;
+        text-align:center;
+    }
+
+    .botoesContato{
+        justify-content:center;
+    }
+
+    .btn-social{
+        margin:0 8px;
+    }
+
+    .especialidades{
+        width:95%;
+    }
+
+    .box-item{
+        width:100%;
+        height:250px;
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+        width:95%;
+        padding:15px;
+    }
+
+    .gallery img{
+        height:160px;
+    }
+
+    footer{
+        font-size:16px;
+        padding:20px;
+        height:auto;
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    .titulo{
+        font-size:1.6rem;
+    }
+
+    .subtitulo{
+        font-size:12px;
+    }
+
+    .box-txt h2{
+        font-size:34px;
+        line-height:38px;
+    }
+
+    .box-txt p{
+        font-size:16px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .gallery img{
+        height:240px;
+    }
+
+    #fecharGaleria{
+        top:15px;
+        right:15px;
+    }
+
+}
+ 
+--soft-linen: #ECE7DFff;
+--dust-grey: #D8D2C9ff;
+--faded-copper: #967347ff;
+--coffee-bean: #7B5A45ff;
+--black: #08090A;
+--loweblack: #121210;
+ #d4af37;

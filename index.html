@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Haroldo Albino Verino" />
+    <title>Hyago Ink tattoo</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <meta name="description" content="Hyago tatuador blackwork de Fortaleza" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lightbox.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="assets/logoAgulha.png"
+            alt="Logo do tatuador"
+            class="logo-img"
+          />
+
+          <div class="logo-texto">
+            <h1>
+              <span class="titulo">Hyago Ink</span>
+              <span class="subtitulo">‏⋆༺𓆩⸙𓆪༻⋆ tattoos ‏⋆༺𓆩⸙𓆪༻⋆</span>
+              <span class="linha"></span>
+            </h1>
+          </div>
+        </div>
+        <ul class="navMenu">
+          <li class="home-and-me">
+            <a href="index.html" target="_self">Home</a>
+          </li>
+          <li class="home-and-me">
+            <a class=" " href="sobreMim.html" target="_blank">Sobre Mim</a>
+          </li>
+          <li>
+            <button
+              onclick="
+                window.open(
+                  'https://wa.me/5585996476082?text=Ol%C3%A1%20Hyago%20%3A).%20Gostaria%20de%20me%20informar%20e%20agendar%20uma%20tattoo%20contigo.',
+                  '_blank',
+                )
+              "
+            >
+              Agendar Tattoo
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="box-img">
+        <img
+          id="barista"
+          src="./assets/PhotoFunia-medium.jpg"
+          alt="mulher barista"
+        />
+      </div>
+      <div class="box-txt">
+        <span> <strong>arte na pele</strong>,histórias para sempre</span>
+        <h2>
+          Cada traço, <br />
+          uma história
+        </h2>
+        <p>
+          Transforme suas idéias em arte na pele, do clássico ao moderno. Cada
+          estilo é executado com técnica,paixão e autenticidade.
+        </p>
+        <div class="botoesContato">
+          <a
+            href="https://wa.me/558596476082"
+            class="btn-social"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/hyago.ink/p/DD-HPWAJzlg/"
+            class="btn-social"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.google.com/maps/place/North+Shopping+J%C3%B3quei/@-3.7646518,-38.5771942,17z/data=!3m1!4b1!4m6!3m5!1s0x7c74bf9281de4b5:0xbfbcad0a85fe0b85!8m2!3d-3.7646572!4d-38.5746193!16s%2Fg%2F12ml2y3hp?entry=ttu&g_ep=EgoyMDI2MDcxOS4wIKXMDSoASAFQAw%3D%3D/"
+            class="btn-social"
+            target="_blank"
+            aria-label="Localização"
+          >
+            <i i class="fa-regular fa-compass"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="especialidades">
+      <div class="box-item bilu">
+        <h3>
+          <a href="#" class="abrir-galeria" data-galeria="blackwork">
+            Blackwork
+          </a>
+        </h3>
+      </div>
+
+      <div class="box-item bilu2">
+        <h3>
+          <a href="#" class="abrir-galeria" data-galeria="anime">
+            Anime/Geek
+          </a>
+        </h3>
+      </div>
+      <div class="box-item bilu3">
+        <h3>
+          <a href="#" class="abrir-galeria" data-galeria="oldschool">
+            Oldschool
+          </a>
+        </h3>
+      </div>
+    </section>
+
+    <footer>2026 © Hyago Ink tattoos. Todos os direitos reservados</footer>
+
+    <!-- ------ -------modal---------------- ----------------------------------------------->
+    <div class="container-galeria">
+      <button id="fecharGaleria">&times;</button>
+
+      <div class="gallery" id="gallery"></div>
+    </div>
+
+    <!-- ----------------------------------------Codigos em Javascript------------------------------------ -->
+    <script src="lightbox-plus-jquery.js"></script>
+    <script>
+      const imagens = {
+        blackwork: [
+          "assets/blackwork/b1.webp",
+          "assets/blackwork/b2.webp",
+          "assets/blackwork/b3.webp",
+          "assets/blackwork/b4.webp",
+          "assets/blackwork/b5.webp",
+          "assets/blackwork/b6.webp",
+          "assets/blackwork/b7.webp",
+          "assets/blackwork/b8.webp",
+        ],
+
+        anime: [
+          "assets/anime/a1.webp",
+          "assets/anime/a2.webp",
+          "assets/anime/a3.webp",
+          "assets/anime/a4.webp",
+          "assets/anime/a5.webp",
+          "assets/anime/a6.webp",
+          "assets/anime/a7.webp",
+          "assets/anime/a8.webp",
+        ],
+
+        oldschool: [
+          "assets/oldschool/o1.webp",
+          "assets/oldschool/o2.webp",
+          "assets/oldschool/o3.webp",
+          "assets/oldschool/o4.webp",
+          "assets/oldschool/o5.webp",
+        ],
+      };
+
+      const modal = document.querySelector(".container-galeria");
+      const gallery = document.getElementById("gallery");
+
+      document.querySelectorAll(".abrir-galeria").forEach((botao) => {
+        botao.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          const nomeGaleria = botao.dataset.galeria;
+
+          gallery.innerHTML = "";
+
+          imagens[nomeGaleria].forEach((foto) => {
+            gallery.innerHTML += `
+            <a href="${foto}"
+              data-lightbox="${nomeGaleria}"
+              data-title="${nomeGaleria}">  
+                <img src="${foto}" alt="">
+            </a>
+            `;
+          });
+
+          modal.style.display = "flex";
+        });
+      });
+
+      document.getElementById("fecharGaleria").onclick = () => {
+        modal.style.display = "none";
+      };
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
