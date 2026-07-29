@@ -313,25 +313,28 @@ strong {
     background-image: url("assets/blackworkcapa.webp");
     background-repeat:no-repeat;
     background-attachment: scroll;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     padding: 0.06rem;
     border: black 4px solid;
 
 }
 .bilu2{
     background-image: url("assets/animecapa.webp");
-    background-repeat: round;
+    background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     padding: 0.06rem;
     border: black 4px solid;
 
 }
 .bilu3{
     background-image: url("assets/oldschoolcapa.webp");
-    background-repeat: round;
+    background-repeat: no-repeat;
     background-attachment: scroll;
-    background-size:100% 100%;
+    background-size:cover;
+    background-position: bottom;
     padding: 0.06rem;
     border: black 4px solid;
 
