@@ -179,12 +179,18 @@ button:hover {
     display: flex;
     justify-content: center;
     width: 45%;
-    margin-bottom: 0.62rem;
-    margin-top: 0.62rem;
-    border: 5px solid #564717;
+    margin: 0.62rem 0;
+    border: 8px solid #564717;
     padding: 0.31rem 0;
 }
 
+.box-img img{
+    border: #000000 10px solid;
+    border-radius: 5px;
+    width:70%;
+    height:auto;
+    object-fit: contain;
+}
 .box-txt {
     display: flex;
     flex-flow: row wrap;
